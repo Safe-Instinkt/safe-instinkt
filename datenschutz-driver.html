@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung – Safe Instinkt Driver App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-content">
+        <div class="logo">
+            <a href="index.html" class="logo-title">
+                <span class="logo-safe">Safe</span>
+                <span class="logo-instinkt">Instinkt</span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html#start">Start</a>
+            <a href="index.html#driver">Driver App</a>
+            <a href="index.html#Store">Store App</a>
+            <a href="index.html#vorteile">Vorteile</a>
+            <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<main class="section">
+    <div class="container">
+        <h1>Datenschutzerklärung – Safe Instinkt Driver App</h1>
+
+        <p>
+            Diese Datenschutzerklärung informiert Sie über die Verarbeitung personenbezogener Daten innerhalb der 
+            Safe Instinkt Driver App („App“). Die App wird betrieben von:
+        </p>
+
+        <p>
+            <strong>Safe Instinkt</strong><br>
+            E-Mail: <a href="mailto:info@safe-instinkt.de">info@safe-instinkt.de</a><br>
+            (Adresse deiner Firma einfügen)
+        </p>
+
+        <h2>1. Verantwortliche Stelle</h2>
+        <p>
+            Verantwortlich im Sinne der Datenschutzgesetze:
+        </p>
+        <p>
+            <strong>Safe Instinkt</strong><br>
+            E-Mail: <a href="mailto:info@safe-instinkt.de">info@safe-instinkt.de</a>
+        </p>
+
+        <h2>2. Verarbeitete Daten</h2>
+
+        <h3>2.1 Profildaten</h3>
+        <p>Beim Erstellen eines Fahrerprofils verarbeiten wir:</p>
+        <ul class="feature-list">
+            <li>Name</li>
+            <li>Telefonnummer</li>
+            <li>Profilfoto (optional; Aufnahme über Kamera)</li>
+        </ul>
+        <p>Speicherung erfolgt in:</p>
+        <ul class="feature-list">
+            <li>Firebase Firestore (Profil &amp; Zuordnung)</li>
+            <li>Firebase Storage (Profilfoto)</li>
+        </ul>
+
+        <h3>2.2 Kamera</h3>
+        <p>
+            Die Kamera wird ausschließlich genutzt, um ein Profilfoto aufzunehmen. 
+            Es findet keine biometrische Analyse, Gesichtserkennung oder Weitergabe statt.
+        </p>
+
+        <h3>2.3 Standortdaten</h3>
+        <p>Standortdaten werden verarbeitet, wenn:</p>
+        <ul class="feature-list">
+            <li>ein SOS-Alarm ausgelöst wird</li>
+            <li>ein SOS-Hintergrunddienst aktiv ist</li>
+        </ul>
+        <p>
+            Dann übermittelt die App den aktuellen Standort an die verbundene Store.
+            Es findet keine dauerhafte Hintergrund-Ortung ohne Anlass statt.
+        </p>
+
+        <h3>2.4 Filial- und Verbindungsdaten</h3>
+        <p>Bei der Store-Verbindung werden gespeichert:</p>
+        <ul class="feature-list">
+            <li>Filial-ID</li>
+            <li>Fahrer-ID</li>
+            <li>Verbindungsstatus</li>
+            <li>SOS-Status</li>
+        </ul>
+        <p>Speicherort:</p>
+        <ul class="feature-list">
+            <li>Firebase Firestore (z.&nbsp;B. „drivers“, „tenants“, „alerts“)</li>
+        </ul>
+
+        <h3>2.5 Gerätesicherheitsdaten (AppCheck)</h3>
+        <p>
+            Zur Missbrauchsvermeidung nutzt die App Firebase App Check (Play Integrity).
+            Dabei werden sicherheitsrelevante Gerätedaten (Integritätsstatus) verarbeitet.
+            Es findet keine Profilbildung statt.
+        </p>
+
+        <h3>2.6 Push-Benachrichtigungen</h3>
+        <p>
+            Die App verwendet Firebase Cloud Messaging (FCM) für:
+        </p>
+        <ul class="feature-list">
+            <li>SOS-Meldungen</li>
+            <li>Systembenachrichtigungen</li>
+            <li>Verbindungsstatus</li>
+        </ul>
+        <p>
+            Dabei wird ein anonymes Gerätetoken verarbeitet.
+        </p>
+
+        <h3>2.7 Authentifizierung</h3>
+        <p>
+            Für das Login nutzen wir Firebase Auth (Telefonnummern-Login).
+        </p>
+        <p>Verarbeitete Daten:</p>
+        <ul class="feature-list">
+            <li>Telefonnummer</li>
+            <li>Bestätigungs-SMS (Einmalcode)</li>
+        </ul>
+
+        <h2>3. Zwecke der Datenverarbeitung</h2>
+        <p>Daten werden ausschließlich für folgende Zwecke genutzt:</p>
+        <ul class="feature-list">
+            <li>Bereitstellung der SOS-Funktion</li>
+            <li>Anzeige und Verwaltung des Fahrerprofils</li>
+            <li>Verbindung mit Storen</li>
+            <li>Übermittlung von Standortdaten im Notfall</li>
+            <li>Absicherung der App gegen Missbrauch</li>
+            <li>Technische Bereitstellung der App</li>
+        </ul>
+        <p>
+            Es findet keine Werbung, kein Tracking und keine Analyse für Marketingzwecke statt.
+        </p>
+
+        <h2>4. Rechtsgrundlagen</h2>
+        <p>
+            Die Datenverarbeitung erfolgt auf Basis von:
+        </p>
+        <ul class="feature-list">
+            <li>Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der App)</li>
+            <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse – Sicherheit &amp; Missbrauchsschutz)</li>
+            <li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über Android-Berechtigungen, z.&nbsp;B. Kamera / Standort)</li>
+        </ul>
+
+        <h2>5. Speicherdauer</h2>
+        <p>
+            Daten werden gespeichert, solange:
+        </p>
+        <ul class="feature-list">
+            <li>der Fahrer sein Profil nutzt oder</li>
+            <li>eine aktive Store-Verbindung besteht oder</li>
+            <li>ein SOS-Alarm aktiv ist.</li>
+        </ul>
+        <p>
+            Nach Beendigung der Nutzung werden die Daten gelöscht oder anonymisiert.
+        </p>
+
+        <h2>6. Weitergabe an Dritte</h2>
+        <p>
+            Eine Weitergabe an Dritte findet nicht statt, außer im Rahmen technischer Dienstleister.
+        </p>
+        <p>
+            Die Verarbeitung erfolgt insbesondere durch Google/Firebase als Auftragsverarbeiter im Rahmen
+            eines DSGVO-konformen Auftragsverhältnisses. Die Datenverarbeitung erfolgt in Rechenzentren
+            der EU bzw. gemäß den Angaben von Google in DSGVO-konformen Regionen.
+        </p>
+
+        <h2>7. Analyse / Tracking</h2>
+        <p>
+            Die App verwendet keine Drittanbieter-Trackingtools wie:
+        </p>
+        <ul class="feature-list">
+            <li>Google Analytics</li>
+            <li>Werbetracking</li>
+            <li>Nutzerprofiling</li>
+        </ul>
+
+        <h2>8. Ihre Rechte</h2>
+        <p>Sie haben folgende Rechte nach der DSGVO:</p>
+        <ul class="feature-list">
+            <li>Recht auf Auskunft</li>
+            <li>Recht auf Berichtigung</li>
+            <li>Recht auf Löschung</li>
+            <li>Recht auf Einschränkung der Verarbeitung</li>
+            <li>Recht auf Datenübertragbarkeit</li>
+            <li>Recht auf Widerruf von Einwilligungen</li>
+            <li>Recht auf Beschwerde bei einer Datenschutzbehörde</li>
+        </ul>
+
+        <p><strong>Hinweis zur Kontolöschung:</strong><br>
+            Die vollständige Anleitung zur Löschung Ihres Fahrer-Kontos finden Sie hier:<br>
+            👉 <a href="konto-loeschen.html">Konto löschen – Safe Instinkt Driver App</a>
+        </p>
+
+        <p>
+            Zur Ausübung dieser Rechte können Sie uns unter
+            <a href="mailto:info@safe-instinkt.de">info@safe-instinkt.de</a> kontaktieren.
+        </p>
+
+        <h2>9. Datensicherheit</h2>
+        <p>
+            Wir setzen aktuelle technische und organisatorische Sicherheitsmaßnahmen ein, darunter:
+        </p>
+        <ul class="feature-list">
+            <li>HTTPS-Verschlüsselung</li>
+            <li>Firebase App Check (Play Integrity)</li>
+            <li>Authentifizierte Firestore-Regeln</li>
+            <li>Kontrollierter Foreground Service für SOS-Funktionen</li>
+        </ul>
+
+        <h2>10. Änderungen dieser Datenschutzerklärung</h2>
+        <p>
+            Diese Datenschutzerklärung kann aktualisiert werden, wenn sich App-Funktionen
+            oder rechtliche Anforderungen ändern. Es gilt die jeweils aktuelle Version auf dieser Seite.
+        </p>
+
+        <h2>11. Kontakt</h2>
+        <p>
+            Bei Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer Daten
+            wenden Sie sich bitte an:
+        </p>
+        <p>
+            <strong>Safe Instinkt</strong><br>
+            E-Mail: <a href="mailto:info@safe-instinkt.de">info@safe-instinkt.de</a>
+        </p>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <span>&copy; <span id="year"></span> Safe Instinkt</span>
+        <div class="footer-links">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz Website</a>
+            <a href="datenschutz-driver.html">Datenschutz Driver App</a>
+            <a href="konto-loeschen.html">Konto löschen</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

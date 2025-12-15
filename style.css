@@ -1,0 +1,387 @@
+/* Basis */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1f2933;
+    background-color: #f5f7fb;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Header / Navigation */
+.site-header {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 0.75rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo: Text, die Farben kommen über ::first-letter */
+.logo-title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+/* Standardfarbe -> wird normal vom Eltern-Element vererbt (weiß im Header, dunkel im Inhalt) */
+.logo-safe,
+.logo-instinkt,
+.app-word {
+    font-weight: 800;
+}
+
+/* Nur die Anfangsbuchstaben einfärben */
+.logo-safe::first-letter {
+    color: #22c55e; /* S grün */
+}
+
+.logo-instinkt::first-letter {
+    color: #ef4444; /* I rot */
+}
+
+.app-word::first-letter {
+    color: #facc15; /* D/F gelb */
+}
+
+.main-nav a {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.main-nav a:hover {
+    opacity: 1;
+}
+
+/* Hero */
+.hero {
+    padding: 4rem 0 3rem;
+    background: radial-gradient(circle at top left, #dbeafe 0%, #e5f9f4 40%, #e5edff 100%);
+    color: #0f172a;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.hero-text {
+    flex: 2;
+    min-width: 260px;
+}
+
+/* Schriftzug im Hero */
+.hero-title {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: baseline;
+}
+
+.hero-subline {
+    flex-basis: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-top: 0.25rem;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    max-width: 600px;
+    color: #111827;
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* Hero-Box + Logo */
+.hero-box {
+    flex: 1;
+    min-width: 240px;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem 1.5rem;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+}
+
+.hero-logo {
+    display: block;
+    max-width: 120px;
+    width: 60%;
+    margin: 0 auto 0.9rem;
+}
+
+.hero-box h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.hero-box ul {
+    list-style: disc;
+    margin-left: 1.1rem;
+    font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.3rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #0f172a;
+    border-color: #0f172a;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(15, 23, 42, 0.06);
+}
+
+/* Sections */
+.section {
+    padding: 3rem 0;
+}
+
+.section-alt {
+    background-color: #e5edff;
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    margin-bottom: 0.75rem;
+}
+
+/* Layouts */
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.two-column > div {
+    flex: 1;
+    min-width: 260px;
+}
+
+/* Box / Cards */
+.box {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-list {
+    list-style: disc;
+    margin-left: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.25rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Kontakt / Hinweise */
+.contact-box {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    margin-bottom: 0.75rem;
+}
+
+.contact-box a {
+    font-weight: 600;
+}
+
+.hint {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.footer-links a {
+    margin-left: 1rem;
+    opacity: 0.9;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+    /* Navigation ausblenden (später optional Burger-Menü) */
+    .main-nav {
+        display: none;
+    }
+
+    /* Container breiter und mit Randabstand */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* Header kompakter & zentriert */
+    .site-header {
+        padding: 0.75rem 1rem;
+        text-align: center;
+    }
+
+    .header-content {
+        justify-content: center;
+    }
+
+    .logo-title {
+        font-size: 1.4rem;
+    }
+
+    /* Hero-Bereich enger, Titel kleiner */
+    .hero {
+        padding: 2.5rem 0 2rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-subline {
+        margin-top: 0.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-box {
+        margin-top: 0.75rem;
+    }
+
+    /* Zweispaltige Layouts untereinander */
+    .two-column {
+        flex-direction: column;
+    }
+
+    /* Karten: eine Spalte */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer untereinander */
+    .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin-left: 0;
+        margin: 0.25rem 0;
+        display: inline-block;
+    }
+}
